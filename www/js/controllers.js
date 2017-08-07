@@ -12,45 +12,39 @@ angular.module('starter.controllers', [])
   // Form data for the login modal
   $scope.loginData = {};
 
-  // Create the login modal that we will use later
-  $ionicModal.fromTemplateUrl('templates/login.html', {
-    scope: $scope
-  }).then(function(modal) {
-    $scope.modal = modal;
-  });
-
-  // Triggered in the login modal to close it
-  $scope.closeLogin = function() {
-    $scope.modal.hide();
-  };
-
-  // Open the login modal
-  $scope.login = function() {
-    $scope.modal.show();
-  };
-
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
     console.log('Doing login', $scope.loginData);
-
-    // Simulate a login delay. Remove this and replace with your login
-    // code if using a login system
-    $timeout(function() {
-      $scope.closeLogin();
-    }, 1000);
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+.controller('LoginCtrl', function($scope, $stateParams) {
+})
+
+.controller('EmpresasCtrl', function($scope) {
+  $scope.empresas = [
+    { id: 1, nombre:'Best Day', info:'asdf',img:'' },
+    { id: 2, nombre:'Price Travel', info:'asdf',img:'' },
+    { id: 3, nombre:'DotNet', info:'asdf',img:'' },
+    { id: 4, nombre:'MoonPalace', info:'asdf',img:'' },
+    { id: 5, nombre:'SAT', info:'asdf',img:'' },
   ];
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('EmpresaCtrl', function($scope, $stateParams) {
+})
+
+.controller('CartaDePresentacionCtrl', function($scope, $stateParams) {
+})
+
+.controller('CartaDeAceptacionCtrl', function($scope, $stateParams) {
+})
+
+.controller('DefinicionDeProjectoCtrl', function($scope, $stateParams) {
+})
+
+.controller('CedulaDeRegistroCtrl', function($scope, $stateParams) {
+})
+
+.controller('CartaDeLiberacionCtrl', function($scope, $stateParams) {
 });

@@ -32,42 +32,78 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: '/search',
+  .state('login', {
+      url: '/login',
+      templateUrl: 'templates/login.html',
+      controller: 'LoginCtrl'
+    })
+
+  .state('app.empresas', {
+    url: '/empresas',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/empresas.html',
+        controller: 'EmpresasCtrl'
       }
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/browse.html'
-        }
-      }
-    })
-    .state('app.playlists', {
-      url: '/playlists',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl'
-        }
-      }
-    })
-
   .state('app.single', {
-    url: '/playlists/:playlistId',
+    url: '/empresas/:empresaId',
     views: {
       'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
+        templateUrl: 'templates/empresa.html',
+        controller: 'EmpresaCtrl'
       }
     }
-  });
+  })
+  
+  .state('app.cartadepresentacion', {
+      url: '/cartadepresentacion',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/CartaDePresentacion.html',
+          controller: 'CartaDePresentacionCtrl'
+        }
+      }
+    })
+  .state('app.cartadeaceptacion', {
+      url: '/cartadeaceptacion',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/CartaDeAceptacion.html',
+          controller: 'CartaDeAceptacionCtrl'
+        }
+      }
+    })
+  .state('app.definiciondeprojecto', {
+      url: '/definiciondeprojecto',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/DefinicionDeProjecto.html',
+          controller: 'DefinicionDeProjectoCtrl'
+        }
+      }
+    })
+  .state('app.ceduladeregistro', {
+      url: '/ceduladeregistro',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/CedulaDeRegistro.html',
+          controller: 'CedulaDeRegistroCtrl'
+        }
+      }
+    })
+  .state('app.cartadeliberacion', {
+      url: '/cartadeliberacion',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/CartaDeLiberacion.html',
+          controller: 'CartaDeLiberacionCtrl'
+        }
+      }
+    })
+  ;
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/empresas');
 });
