@@ -1,106 +1,296 @@
 <ion-view view-title="Definicion de Projecto">
   <ion-content>
-        <div class="content-form ">
-        <div class="list background-container">
-            <div class="item item-divider item-dark2">Estancia</div> <!-- Numero de estancia-->
-            <label class="item item-input item-select item-dark">
-            <div class="input-label white">
-                    Estancia
-                </div>
-                <select>
-                <option selected>Uno</option>
-                <option>Dos</option>
-                </select>
-            </label>
-            <div class="item item-divider item-dark2">Datos del Proyecto</div> <!-- Datos del proyecto-->
-            <label class="item item-input item-floating-label item-dark">
-                <span class="input-label white">Nombre del Proyecto</span>
-                <input type="text" placeholder="Nombre del Proyecto">
-            </label>
-            <div class="item item-divider item-dark2">Datos de la Empresa</div> <!-- Datos de la empresa-->
-            <label class="item item-input item-floating-label item-dark">
-                <span class="input-label white">Nombre (s)</span>
-                <input type="text" placeholder="Nombre (s)">
-            </label>
-            <label class="item item-input item-floating-label item-dark">
-                <span class="input-label white">Apellido Paterno</span>
-                <input type="text" placeholder="Apellido Paterno">
-            </label>
-            <label class="item item-input item-floating-label item-dark">
-                <span class="input-label white">Apellido Materno</span>
-                <input type="text" placeholder="Apellido Materno">
-            </label>
-            <label class="item item-input item-floating-label item-dark">
-                <span class="input-label white">Giro</span>
-                <input type="text" placeholder="Giro">
-            </label>
-            <label class="item item-input item-floating-label item-dark">
-                <span class="input-label white">Tipo</span>
-                <input type="text" placeholder="Tipo">
-            </label>
-            <label class="item item-input item-floating-label item-dark">
-                <span class="input-label white">Dirección</span>
-                <input type="text" placeholder="Dirección">
-            </label>
-            <label class="item item-input item-floating-label item-dark">
-                <span class="input-label white">Responsable de Recursos Humanos</span>
-                <input type="text" placeholder="Responsable de Recursos Humanos">
-            </label>
-            <label class="item item-input item-floating-label item-dark">
-                <span class="input-label white">Teléfono</span>
-                <input type="text" placeholder="Teléfono">
-            </label>
-            <label class="item item-input item-floating-label item-dark">
-                <span class="input-label white">Extensión</span>
-                <input type="text" placeholder="Extensión">
-            </label>
-            <label class="item item-input item-floating-label item-dark">
-                <span class="input-label white">example@domain.etc</span>
-                <input type="text" placeholder="example@domain.etc">
-            </label>
-            <div class="item item-divider item-dark2">Datos del Asesor Empresarial</div> <!-- Datos de asesor epresarial-->
-            <label class="item item-input item-floating-label item-dark">
-                <span class="input-label white">Nombre (s)</span>
-                <input type="text" placeholder="Nombre (s)">
-            </label>
-            <label class="item item-input item-floating-label item-dark">
-                <span class="input-label white">Apellido Paterno</span>
-                <input type="text" placeholder="Apellido Paterno">
-            </label>
-            <label class="item item-input item-floating-label item-dark">
-                <span class="input-label white">Apellido Materno</span>
-                <input type="text" placeholder="Apellido Materno">
-            </label>
-            <label class="item item-input item-floating-label item-dark">
-                <span class="input-label white">Puesto</span>
-                <input type="text" placeholder="Puesto">
-            </label>
-            <label class="item item-input item-floating-label item-dark">
-                <span class="input-label white">Teléfono</span>
-                <input type="text" placeholder="Teléfono">
-            </label>
-            <label class="item item-input item-floating-label item-dark">
-                <span class="input-label white">Extensión</span>
-                <input type="text" placeholder="Extensión">
-            </label>
-            <label class="item item-input item-floating-label item-dark">
-                <span class="input-label white">example@domain.etc</span>
-                <input type="text" placeholder="example@domain.etc">
-            </label>
-            <div class="item item-divider item-dark2"> Asesor Académico </div> <!-- Numero de estancia-->
-            <label class="item item-input item-select item-dark">
-            <div class="input-label white">
-                    Asesor
-                </div>
-                <select class="item-dark">
-                <option selected>Carlos Alberto Ramirez Velazquez</option>
-                <option>Manuel Alejandro Flores Barrera</option>
-                </select>
-            </label>
-            <button class="button button-block icon icon-right ion-edit button-dark">
-            Guardar
-            </button>
-        </div>
-    </div>
+      <div class="content-form ">
+	<div class="list background-container">
+		<div class="item item-divider item-dark2">Datos de la empresa</div> <!-- Datos del empresa-->
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Nombre de la empresa</span>
+		    <input type="text" placeholder="Nombre de la empresa">
+		</label>
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Nombre del asesor empresarial</span>
+		    <input type="text" placeholder="Nombre del asesor empresarial">
+		</label>
+		<label class="item item-input item-floating-label item-dark ">
+		    <span class="input-label white">Puesto</span>
+		    <input type="text" placeholder="Puesto">
+		</label>
+		<div class="item item-divider item-dark2">Proyecto</div> <!-- proyecto-->
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Nombre del proyecto</span>
+		    <input type="text" placeholder="Nombre del proyecto">
+		</label>
+		<label class="item item-input item-floating-label item-dark textarea2">
+		    <span class="input-label white">Objetivo del proyecto</span>
+		    <textarea class="item item-dark2 item-text-wrap" maxlength="200" type="text" placeholder="Objetivo del proyecto" rows="3" cols="3"></textarea>
+		</label>
+							<!-- Semana -->
+		<div class="item item-divider item-dark2">Semana 1</div> 
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Descripcion de etapa</span>
+		    <input type="text" placeholder="Descripcion de etapa">
+		</label>
+		<label class="item item-input item-dark" >
+		    <span class="input-label white">Inicio de semana:</span>
+		    <input type="date">
+		</label>
+		<label class="item item-input item-dark">
+		    <span class="input-label white">Fin de semana:</span>
+		    <input type="date">
+		</label>
+		<label class="item item-input item-stacked-label item-dark">
+			<span class="input-label white">Horas</span>
+			<form class="item range item-dark noneBorders" action="/action_page.php"
+			  oninput="x.value=parseInt(horas.value)">
+			  <i><output name="x" for="a b"></output></i>
+			  <input type="range"  id="horas" name="horas" min="4" max="40" value="4">
+			</form>
+		</label>
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Descripción de competencias</span>
+		    <input type="text" placeholder="Descripción de competencias">
+		</label>
+							<!-- Semana -->
+		<div class="item item-divider item-dark2">Semana 2</div> 
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Descripcion de etapa</span>
+		    <input type="text" placeholder="Descripcion de etapa">
+		</label>
+		<label class="item item-input item-dark" >
+		    <span class="input-label white">Inicio de semana:</span>
+		    <input type="date">
+		</label>
+		<label class="item item-input item-dark">
+		    <span class="input-label white">Fin de semana:</span>
+		    <input type="date">
+		</label>
+		<label class="item item-input item-stacked-label item-dark">
+			<span class="input-label white">Horas</span>
+			<form class="item range item-dark noneBorders" action="/action_page.php"
+			  oninput="x.value=parseInt(horas.value)">
+			  <i><output name="x" for="a b"></output></i>
+			  <input type="range"  id="horas" name="horas" min="4" max="40" value="4">
+			</form>
+		</label>
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Descripción de competencias</span>
+		    <input type="text" placeholder="Descripción de competencias">
+		</label>
+		<!-- Semana -->
+		<div class="item item-divider item-dark2">Semana 3</div> 
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Descripcion de etapa</span>
+		    <input type="text" placeholder="Descripcion de etapa">
+		</label>
+		<label class="item item-input item-dark" >
+		    <span class="input-label white">Inicio de semana:</span>
+		    <input type="date">
+		</label>
+		<label class="item item-input item-dark">
+		    <span class="input-label white">Fin de semana:</span>
+		    <input type="date">
+		</label>
+		<label class="item item-input item-stacked-label item-dark">
+			<span class="input-label white">Horas</span>
+			<form class="item range item-dark noneBorders" action="/action_page.php"
+			  oninput="x.value=parseInt(horas.value)">
+			  <i><output name="x" for="a b"></output></i>
+			  <input type="range"  id="horas" name="horas" min="4" max="40" value="4">
+			</form>
+		</label>
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Descripción de competencias</span>
+		    <input type="text" placeholder="Descripción de competencias">
+		</label>
+		<!-- Semana -->
+		<div class="item item-divider item-dark2">Semana 4</div> 
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Descripcion de etapa</span>
+		    <input type="text" placeholder="Descripcion de etapa">
+		</label>
+		<label class="item item-input item-dark" >
+		    <span class="input-label white">Inicio de semana:</span>
+		    <input type="date">
+		</label>
+		<label class="item item-input item-dark">
+		    <span class="input-label white">Fin de semana:</span>
+		    <input type="date">
+		</label>
+		<label class="item item-input item-stacked-label item-dark">
+			<span class="input-label white">Horas</span>
+			<form class="item range item-dark noneBorders" action="/action_page.php"
+			  oninput="x.value=parseInt(horas.value)">
+			  <i><output name="x" for="a b"></output></i>
+			  <input type="range"  id="horas" name="horas" min="4" max="40" value="4">
+			</form>
+		</label>
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Descripción de competencias</span>
+		    <input type="text" placeholder="Descripción de competencias">
+		</label>
+		<!-- Semana -->
+		<div class="item item-divider item-dark2">Semana 5</div> 
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Descripcion de etapa</span>
+		    <input type="text" placeholder="Descripcion de etapa">
+		</label>
+		<label class="item item-input item-dark" >
+		    <span class="input-label white">Inicio de semana:</span>
+		    <input type="date">
+		</label>
+		<label class="item item-input item-dark">
+		    <span class="input-label white">Fin de semana:</span>
+		    <input type="date">
+		</label>
+		<label class="item item-input item-stacked-label item-dark">
+			<span class="input-label white">Horas</span>
+			<form class="item range item-dark noneBorders" action="/action_page.php"
+			  oninput="x.value=parseInt(horas.value)">
+			  <i><output name="x" for="a b"></output></i>
+			  <input type="range"  id="horas" name="horas" min="4" max="40" value="4">
+			</form>
+		</label>
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Descripción de competencias</span>
+		    <input type="text" placeholder="Descripción de competencias">
+		</label>
+		<!-- Semana -->
+		<div class="item item-divider item-dark2">Semana 6</div> 
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Descripcion de etapa</span>
+		    <input type="text" placeholder="Descripcion de etapa">
+		</label>
+		<label class="item item-input item-dark" >
+		    <span class="input-label white">Inicio de semana:</span>
+		    <input type="date">
+		</label>
+		<label class="item item-input item-dark">
+		    <span class="input-label white">Fin de semana:</span>
+		    <input type="date">
+		</label>
+		<label class="item item-input item-stacked-label item-dark">
+			<span class="input-label white">Horas</span>
+			<form class="item range item-dark noneBorders" action="/action_page.php"
+			  oninput="x.value=parseInt(horas.value)">
+			  <i><output name="x" for="a b"></output></i>
+			  <input type="range"  id="horas" name="horas" min="4" max="40" value="4">
+			</form>
+		</label>
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Descripción de competencias</span>
+		    <input type="text" placeholder="Descripción de competencias">
+		</label>
+		<!-- Semana -->
+		<div class="item item-divider item-dark2">Semana 7</div> 
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Descripcion de etapa</span>
+		    <input type="text" placeholder="Descripcion de etapa">
+		</label>
+		<label class="item item-input item-dark" >
+		    <span class="input-label white">Inicio de semana:</span>
+		    <input type="date">
+		</label>
+		<label class="item item-input item-dark">
+		    <span class="input-label white">Fin de semana:</span>
+		    <input type="date">
+		</label>
+		<label class="item item-input item-stacked-label item-dark">
+			<span class="input-label white">Horas</span>
+			<form class="item range item-dark noneBorders" action="/action_page.php"
+			  oninput="x.value=parseInt(horas.value)">
+			  <i><output name="x" for="a b"></output></i>
+			  <input type="range"  id="horas" name="horas" min="4" max="40" value="4">
+			</form>
+		</label>
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Descripción de competencias</span>
+		    <input type="text" placeholder="Descripción de competencias">
+		</label>
+		<!-- Semana -->
+		<div class="item item-divider item-dark2">Semana 8</div> 
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Descripcion de etapa</span>
+		    <input type="text" placeholder="Descripcion de etapa">
+		</label>
+		<label class="item item-input item-dark" >
+		    <span class="input-label white">Inicio de semana:</span>
+		    <input type="date">
+		</label>
+		<label class="item item-input item-dark">
+		    <span class="input-label white">Fin de semana:</span>
+		    <input type="date">
+		</label>
+		<label class="item item-input item-stacked-label item-dark">
+			<span class="input-label white">Horas</span>
+			<form class="item range item-dark noneBorders" action="/action_page.php"
+			  oninput="x.value=parseInt(horas.value)">
+			  <i><output name="x" for="a b"></output></i>
+			  <input type="range"  id="horas" name="horas" min="4" max="40" value="4">
+			</form>
+		</label>
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Descripción de competencias</span>
+		    <input type="text" placeholder="Descripción de competencias">
+		</label>
+		<!-- Semana -->
+		<div class="item item-divider item-dark2">Semana 9</div> 
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Descripcion de etapa</span>
+		    <input type="text" placeholder="Descripcion de etapa">
+		</label>
+		<label class="item item-input item-dark" >
+		    <span class="input-label white">Inicio de semana:</span>
+		    <input type="date">
+		</label>
+		<label class="item item-input item-dark">
+		    <span class="input-label white">Fin de semana:</span>
+		    <input type="date">
+		</label>
+		<label class="item item-input item-stacked-label item-dark">
+			<span class="input-label white">Horas</span>
+			<form class="item range item-dark noneBorders" action="/action_page.php"
+			  oninput="x.value=parseInt(horas.value)">
+			  <i><output name="x" for="a b"></output></i>
+			  <input type="range"  id="horas" name="horas" min="4" max="40" value="4">
+			</form>
+		</label>
+		<label class="item item-input item-floating-label item-dark">
+		    <span class="input-label white">Descripción de competencias</span>
+		    <input type="text" placeholder="Descripción de competencias">
+		</label>
+		<div class="item item-divider item-dark2"></div> 
+		<label class="item item-input item-floating-label item-dark textarea2">
+		    <span class="input-label white">Actividades de Aprendizaje</span>
+		    <textarea class="item item-dark2 item-text-wrap" maxlength="200" type="text" placeholder="Actividades de Aprendizaje" rows="3" cols="3"></textarea>
+		</label>
+		<label class="item item-input item-floating-label item-dark textarea2">
+		    <span class="input-label white">Resultados de Aprendizaje</span>
+		    <textarea class="item item-dark2 item-text-wrap" maxlength="200" type="text" placeholder="Resultados de Aprendizaje" rows="3" cols="3"></textarea>
+		</label>
+		<label class="item item-input item-floating-label item-dark textarea2">
+		    <span class="input-label white">Evidencias</span>
+		    <textarea class="item item-dark2 item-text-wrap" maxlength="200" type="text" placeholder="Evidencias" rows="3" cols="3"></textarea>
+		</label>
+		<label class="item item-input item-floating-label item-dark textarea2">
+		    <span class="input-label white">Instrumentos de Evaluación</span>
+		    <textarea class="item item-dark2 item-text-wrap" maxlength="200" type="text" placeholder="Instrumentos de Evaluación" rows="3" cols="3"></textarea>
+		</label>
+		<label class="item item-input item-floating-label item-dark textarea2">
+		    <span class="input-label white">Asignaturas</span>
+		    <textarea class="item item-dark2 item-text-wrap" maxlength="200" type="text" placeholder="Asignaturas" rows="3" cols="3"></textarea>
+		</label>
+		<label class="item item-input item-floating-label item-dark textarea2">
+		    <span class="input-label white">Tópicos Recomendados </span>
+		    <textarea class="item item-dark2 item-text-wrap" maxlength="200" type="text" placeholder="Tópicos Recomendados " rows="3" cols="3"></textarea>
+		</label>
+		<label class="item item-input item-floating-label item-dark textarea2">
+		    <span class="input-label white">Estrategias Didácticas</span>
+		    <textarea class="item item-dark2 item-text-wrap" maxlength="200" type="text" placeholder="Estrategias Didácticas" rows="3" cols="3"></textarea>
+		</label>
+		<button class="button button-block icon icon-right ion-edit button-dark">
+		  Guardar
+		</button>
+	</div>
+</div>
   </ion-content>
 </ion-view>
